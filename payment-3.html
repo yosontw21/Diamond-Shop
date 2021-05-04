@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    產品列表
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+  <div class="container">
+    <button type="button" class="navbar-toggler collapsed d-md-none" data-toggle="collapse" data-target="#navbarList"
+      aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-icons burger-btn">
+        menu
+      </span>
+    </button>
+    <h1 class="font-xxl">
+      <a href="index.html" class="">Diamond</a>
+    </h1>
+    <a href="cart.html" class="nav-link d-flex align-items-center order-md-1"><span class="material-icons">
+        shopping_cart
+      </span></a>
+    <div class="navbar-collapse collapse" id="navbarList">
+      <ul class="navbar-nav ml-auto mt-md-0 mt-3">
+        <li class="nav-item "><a href="index.html"
+            class="nav-link text-primary font-md">首頁</a>
+        </li>
+        <li class="nav-item "><a href="products.html"
+            class="nav-link text-primary font-md">鑽石</a></li>
+        <li class="nav-item "><a href="login.html"
+            class="nav-link text-primary font-md">登入</a></li>
+      </ul>
+    </div>
+</nav>    
+<div class="container my-md-8 my-0">
+  <div class="row">
+    <div class="col-lg-8 px-0 px-md-3">
+      <div class="bg-primary text-secondary p-6">
+        <div class="form-row mb-7">
+          <div class="col-6">
+            <h3 class="text-secondary font-xl">發票</h3>
+          </div>
+          <div class="col-6 d-flex align-items-center">
+            <div class="process-bar w-100">
+              <div class="circle-bar material-icons completed">
+                done
+              </div>
+              <div class="circle-bar material-icons completed">
+                done
+              </div>
+              <div class="circle-bar material-icons active"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-6 pr-0">
+            <div class="form-group">
+
+              <button type="button"
+                class="btn btn-primary text-secondary font-md border-radius-0 py-2 btn-block font-weight-bold border-secondary"
+                onclick="location.href='payment-2.html'">電子發票</button>
+            </div>
+          </div>
+          <div class="col-6 pl-0">
+            <div class="form-group">
+              <button type="button"
+                class="btn btn-secondary text-primary font-md border-radius-0 py-2 btn-block font-weight-bold"
+                onclick="location.href='payment-3.html'">郵寄發票</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+
+          <label for="useraddress" class="font-md  col-6">地址</label>
+          <div class="col-6">
+            <div class="form-check text-right">
+              <input type="checkbox" id="ship-address" class="form-check-input" style="width:16px; height:16px;">
+              <label for="ship-address" class="form-check-label ml-1">同運送地址</label>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control form-control-lg bg-secondary border-radius-0" id="useraddress">
+                <option selected>高雄市</option>
+                <option>台北市</option>
+                <option>台中市</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control form-control-lg bg-secondary border-radius-0" id="useraddress">
+                <option selected>新興區</option>
+                <option>前鎮區</option>
+                <option>苓雅區</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-row mb-3">
+          <div class="col-12">
+            <input type="text" placeholder="幸福路 520 號"
+              class="form-control form-control-lg bg-secondary border-radius-0">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="uniform-num" class="font-md">統一編號（選填）</label>
+          <input type="text" id="uniform-num" placeholder="12345678"
+            class="form-control form-control-lg bg-secondary border-radius-0">
+        </div>
+
+      </div>
+      <button type="button" class="btn btn-success text-primary font-weight-bold font-lg border-radius-0 py-3 btn-block"
+        onclick="location.href='pay-success.html'">確認結帳</button>
+    </div>
+
+    <div class="col-lg-4 d-none d-md-block">
+      <div class="mb-4">
+        <h3 class="text-center text-info font-lg font-weight-bold py-3 bg-secondary">訂單摘要</h3>
+        <div class="border-secondary px-3">
+          <div class="d-flex justify-content-between text-info pt-3 mb-2">
+            <span>小計</span>
+            <span>NT$ 199,999</span>
+          </div>
+          <div class="d-flex justify-content-between text-info mb-3">
+            <span>運費</span>
+            <span>NT$ 0</span>
+          </div>
+          <div class="d-flex justify-content-between text-info pb-3 font-weight-bold font-md">
+            <span>總計</span>
+            <span>NT$ 199,999</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-secondary">
+        <h3 class="text-center text-info font-lg font-weight-bold py-3 bg-secondary mb-3">購物清單</h3>
+        <div class="px-3">
+          <div class="d-flex align-items-center mb-3">
+            <div class="mr-4">
+              <div class="payment-img bg-cover" style="background-image: url('./assets/images/product-4.jpg');">
+              </div>
+            </div>
+            <div class="text-info">
+              <p>花式鑽石（2）</p>
+              <span class="font-md font-weight-bold">NT$ 99,999</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="mr-4">
+              <div class="payment-img bg-cover" style="background-image: url('./assets/images/product-5.jpg');">
+              </div>
+            </div>
+            <div class="text-info">
+              <p>花式鑽石（2）</p>
+              <span class="font-md font-weight-bold">NT$ 99,999</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="mr-4">
+              <div class="payment-img bg-cover" style="background-image: url('./assets/images/product-6.jpg');">
+              </div>
+            </div>
+            <div class="text-info">
+              <p>花式鑽石（2）</p>
+              <span class="font-md font-weight-bold">NT$ 99,999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="bg-primary py-6">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div
+        class="col-md-5 col-10 d-flex align-items-center mb-md-0 mb-7 justify-content-md-start justify-content-center">
+        <h3 class="font-xl text-secondary font-weight-normal">訂閱你我的鑽石郵件</h3>
+      </div>
+
+      <div class="col-md-5 col-10">
+        <div class="form--group d-flex">
+          <label for="email" class="position-relative">
+            <span class="material-icons position-absolute email-icon text-primary">
+              email
+            </span>
+          </label>
+          <input type="email" id="email" class="form-control w-100 pl-8 py-6 bg-secondary border-radius-0">
+          <button class="btn btn-success arrow-btn p-3"><span class="material-icons">
+              arrow_forward
+            </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-secondary pt-7">
+  <div class="container">
+    <div class="row justify-content-center mb-md-7 mb-0">
+      <div class="col-md-10 d-flex flex-column justify-content-between">
+
+        <ul class="py-md-0 py-7">
+          <li>
+            <a href="tel:07-1234-5678">07-1234-5678</a>
+          </li>
+          <li>
+            <a href="mailto:diamond@email.com">diamond@email.com</a>
+          </li>
+          <li class="text-primary">
+            813 高雄市新興區鑽石路 999 號
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row justify-content-center align-items-center pb-md-5 pb-0">
+      <div class="col-md-5">
+        <ul class="d-flex mb-md-0 mb-5">
+          <li><a href=""><i class="fab fa-facebook font-xl icon-social mr-2">
+              </i></a></li>
+          <li><a href=""> <i class="fab fa-instagram font-xl icon-social mr-2"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter font-xl icon-social"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 pb-md-0 pb-7">
+
+        <h4 class="text-primary font-sm text-md-right text-left mb-3">© 2018 Sweetaste* All Rights Reserved</h4>
+        <p class="font-lg text-md-right text-left">本作品僅練習用途，非商業營利</p>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- Favorites Modal -->
+        <div class="modal fade" id="favorites" tabindex="-1" role="dialog" aria-labelledby="favorites"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="text-center font-md text-primary font-weight-bold">已加入我的收藏</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cart Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="cart" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="text-center font-md text-primary font-weight-bold">已加入購物車</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+          crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/c538e6218c.js"></script>
+</body>
+
+</html>
