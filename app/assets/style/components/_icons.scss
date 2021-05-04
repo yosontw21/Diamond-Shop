@@ -1,0 +1,32 @@
+.email-icon {
+  top: 16px;
+  left: 20px;
+}
+
+.arrow-icon {
+  border-radius: 0;
+}
+
+.page-icon {
+  border-radius: 0px !important;
+  padding: 12px 18px !important;
+}
+
+.icon-social {
+  color: #000;
+}
+
+.credit-icon {
+  bottom: 12px;
+  right: 22px;
+}
+
+.user-email, .user-pwd {
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: $primary;
+  }
+}

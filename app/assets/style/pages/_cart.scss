@@ -1,0 +1,22 @@
+.cart-img {
+  height: 110px;
+  min-width: 110px;
+}
+
+.cart-control {
+  width: 145px;
+}
+
+.cart-pay-square {
+  background: $primary;
+  @include media-breakpoint-down (sm) {
+    background: #ffffff;
+    h3{
+      background: $secondary;
+      color: $primary !important;
+    }
+    span {
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.font {
+  &-sm {
+    font-size: 16px;
+  }
+  &-md {
+    font-size: 20px;
+  }
+  &-lg {
+    font-size: 24px;
+  }
+  &-xl {
+    font-size: 36px;
+  }
+  &-xxl {
+    font-size: 40px;
+  }
+}
+
+@include media-breakpoint-up (md) {
+  .vertical-md-rl {
+    writing-mode: vertical-rl;
+  }
+}
+
+.nav-item {
+  &.active {
+    color: rgb(0, 0, 0) !important;
+  }
+}
+
+@include media-breakpoint-down (sm) {
+  .nav-item {
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid $secondary;
+    &:hover {
+      background: $secondary;
+    }
+  }
+}
